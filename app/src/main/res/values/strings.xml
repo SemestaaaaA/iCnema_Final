@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">iCnema_UTS</string>
+
+        <string-array name="showtimes_array">
+            <item>10:00</item>
+            <item>13:00</item>
+            <item>16:00</item>
+            <item>19:00</item>
+            <item>22:00</item>
+        </string-array>
+
+
+    <integer-array name="data_photo">
+        <item>@drawable/afilm1</item>
+        <item>@drawable/afilm2</item>
+        <item>@drawable/afilm3</item>
+        <item>@drawable/afilm3</item>
+        <item>@drawable/afilm4</item>
+        <item>@drawable/afilm5</item>
+        <item>@drawable/afilm6</item>
+        <item>@drawable/afilm7</item>
+        <item>@drawable/afilm8</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:background="@drawable/bgcoldor"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:paddingTop="10dp"
+        app:srcCompat="@drawable/logow" />
+
+    <!-- In activity_main.xml -->
+    <LinearLayout
+        android:id="@+id/margin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/search_background"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Search movies..."
+            android:iconifiedByDefault="false"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white"
+            android:textColorHint="#BDBDBD"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        app:srcCompat="@drawable/hero" />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="42dp"-->
+<!--        android:background="#26FFFFFF"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:padding="0dp"-->
+<!--        android:paddingStart="16dp"-->
+<!--        android:paddingLeft="0dp"-->
+<!--        android:paddingRight="0dp">-->
+
+
+<!--        &lt;!&ndash; Location Icon &ndash;&gt;-->
+<!--        <ImageView-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_margin="0dp"-->
+<!--            android:src="@drawable/ic_location"-->
+<!--            android:visibility="visible" />-->
+
+<!--        &lt;!&ndash; Dropdown Spinner &ndash;&gt;-->
+<!--        <Spinner-->
+<!--            android:id="@+id/location_spinner"-->
+<!--            android:layout_width="364dp"-->
+<!--            android:layout_height="19dp"-->
+<!--            android:layout_margin="0dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:dropDownVerticalOffset="0dp"-->
+<!--            android:popupBackground="@drawable/spinner_popup_background"-->
+<!--            android:spinnerMode="dropdown" />-->
+<!--    </LinearLayout>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginTop="6dp"-->
+<!--        android:layout_marginBottom="6dp"-->
+<!--        android:text="Sedang Tayang"-->
+<!--        android:textColor="#dfdfdf" />-->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager_id"
+        android:layout_width="match_parent"
+        android:layout_height="509dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#7226FF"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/white"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/white" />
+
+</LinearLayout>
